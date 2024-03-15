@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Especifica la ruta del directorio principal de OpenFOAM
+OF_ROOT="$WM_PROJECT_USER_DIR/run/Skill_Lync/Introduction_to_OpenFOAM_development/Week10-Challenge/backwardFacingStep2D/kEpsilon/"
+
+# Cambia al directorio principal de OpenFOAM
+cd $OF_ROOT
+
+# Patrón para buscar directorios temporales, ajusta según tu caso
+TEMP_DIR_PATTERN="temp*"
+
+# Bucle for para eliminar los directorios temporales
+for temp_dir in $(find . -type d -name "$TEMP_DIR_PATTERN"); do
+    echo "Eliminando directorio temporal: $temp_dir"
+    rm -rf "$temp_dir"
+done
+
+echo "Proceso completado."

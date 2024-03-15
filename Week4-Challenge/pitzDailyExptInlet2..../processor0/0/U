@@ -1,0 +1,90 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       volVectorField;
+    location    "0";
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0);
+
+boundaryField
+{
+    inlet
+    {
+        type            timeVaryingMappedFixedValue;
+        fieldTable      U;
+        offset          constant (0 0 0);
+        value           nonuniform List<vector> 
+30
+(
+(6.13151 0 0)
+(8.48791 0 0)
+(12.5061 0 0)
+(13.5273 0 0)
+(14.1216 0 0)
+(14.2941 0 0)
+(14.3484 0 0)
+(14.3208 0 0)
+(14.262 0 0)
+(14.2001 0 0)
+(14.0183 0 0)
+(13.9039 0 0)
+(13.8185 0 0)
+(13.7339 0 0)
+(13.6478 0 0)
+(13.6239 0 0)
+(13.5946 0 0)
+(13.4634 0 0)
+(13.1202 0 0)
+(12.8815 0 0)
+(12.882 0 0)
+(12.9829 0 0)
+(13.0832 0 0)
+(13.2619 0 0)
+(13.5516 0 0)
+(13.7104 0 0)
+(11.7988 0 0)
+(8.04016 0 0)
+(4.50793 0 0)
+(1.42961 0 0)
+)
+;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    upperWall
+    {
+        type            noSlip;
+    }
+    lowerWall
+    {
+        type            noSlip;
+    }
+    frontAndBack
+    {
+        type            empty;
+    }
+    procBoundary0to1
+    {
+        type            processor;
+        value           uniform (0 0 0);
+    }
+}
+
+
+// ************************************************************************* //

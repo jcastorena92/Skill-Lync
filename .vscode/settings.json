@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "icoFoam.C": "cpp",
+        "scalarCavity.C": "cpp"
+    },
+    "git.ignoreLimitWarning": true
+}

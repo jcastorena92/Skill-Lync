@@ -1,0 +1,63 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : simpleFoam -postProcess -latestTime -func yPlus
+Date   : Mar 14 2024
+Time   : 21:22:25
+Host   : johanes2022
+PID    : 22524
+I/O    : uncollated
+Case   : /home/juan/OpenFOAM/juan-v2306/run/Skill_Lync/Introduction_to_OpenFOAM_development/Week10-Challenge/backwardFacingStep2D/realizableKE
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 2000
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.0001
+    field U	 tolerance 1e-06
+    field "(k|epsilon|omega|f|v2)"	 tolerance 1e-05
+
+Time = 2000
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model realizableKE
+RAS
+{
+    RASModel        realizableKE;
+    turbulence      on;
+    printCoeffs     on;
+    A0              4;
+    C2              1.9;
+    sigmak          1;
+    sigmaEps        1.2;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing field yPlus
+    patch upperWall y+ : min = 0.519134, max = 2.72148, average = 1.41757
+    patch lowerWall y+ : min = 0.0122769, max = 5.67568, average = 1.32923
+
+End
+

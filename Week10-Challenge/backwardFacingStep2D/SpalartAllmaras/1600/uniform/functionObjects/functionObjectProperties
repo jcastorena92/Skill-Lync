@@ -1,0 +1,139 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "1600/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    sample
+    {
+        scalar
+        {
+            average(Uref,p) 21876.7182020349;
+            min(Uref,p)     21876.7182020349;
+            max(Uref,p)     21876.7182020349;
+            average(x_by_h_m04,p) 21865.74118175734;
+            min(x_by_h_m04,p) 21823.45578581698;
+            max(x_by_h_m04,p) 22032.86823402112;
+            average(x_by_h_01,p) 21587.48324086846;
+            min(x_by_h_01,p) 20861.64186438983;
+            max(x_by_h_01,p) 22201.17740902303;
+            average(x_by_h_04,p) 21296.17525055272;
+            min(x_by_h_04,p) 20820.11605956357;
+            max(x_by_h_04,p) 21577.92192370812;
+            average(x_by_h_06,p) 20470.81686294405;
+            min(x_by_h_06,p) 19099.72008936;
+            max(x_by_h_06,p) 20788.58316028785;
+            average(x_by_h_10,p) 17772.11578093359;
+            min(x_by_h_10,p) 15811.37471477576;
+            max(x_by_h_10,p) 19020.86108315531;
+            average(p)      20455.5833801379;
+            min(p)          15811.37471477576;
+            max(p)          22201.17740902303;
+        }
+        label
+        {
+            size(Uref,p)    1;
+            size(x_by_h_m04,p) 41;
+            size(x_by_h_01,p) 89;
+            size(x_by_h_04,p) 89;
+            size(x_by_h_06,p) 89;
+            size(x_by_h_10,p) 88;
+            size(p)         397;
+            size(Uref,U)    1;
+            size(x_by_h_m04,U) 41;
+            size(x_by_h_01,U) 89;
+            size(x_by_h_04,U) 89;
+            size(x_by_h_06,U) 89;
+            size(x_by_h_10,U) 88;
+            size(U)         397;
+            size(Uref,turbulenceProperties:devReff) 1;
+            size(x_by_h_m04,turbulenceProperties:devReff) 41;
+            size(x_by_h_01,turbulenceProperties:devReff) 89;
+            size(x_by_h_04,turbulenceProperties:devReff) 89;
+            size(x_by_h_06,turbulenceProperties:devReff) 89;
+            size(x_by_h_10,turbulenceProperties:devReff) 88;
+            size(turbulenceProperties:devReff) 397;
+        }
+        vector
+        {
+            average(Uref,U) ( 45.4384 -2.48911 0 );
+            min(Uref,U)     ( 45.4384 -2.48911 0 );
+            max(Uref,U)     ( 45.4384 -2.48911 0 );
+            average(x_by_h_m04,U) ( 35.4369 -1.03394 0 );
+            min(x_by_h_m04,U) ( 0 -2.74895 0 );
+            max(x_by_h_m04,U) ( 46.9273 0 0 );
+            average(x_by_h_01,U) ( 25.9137 -17.5422 -1.25451e-19 );
+            min(x_by_h_01,U) ( -13.5462 -44.4113 -1.06439e-16 );
+            max(x_by_h_01,U) ( 52.4354 0 8.49623e-17 );
+            average(x_by_h_04,U) ( 38.0602 -10.9873 -5.37949e-19 );
+            min(x_by_h_04,U) ( -13.7939 -25.7966 -1.28782e-16 );
+            max(x_by_h_04,U) ( 57.8599 0 1.756e-16 );
+            average(x_by_h_06,U) ( 48.5388 -6.82879 1.25351e-18 );
+            min(x_by_h_06,U) ( -28.2389 -32.7154 -1.02699e-16 );
+            max(x_by_h_06,U) ( 68.82729999999999 0 9.44823e-17 );
+            average(x_by_h_10,U) ( 48.312 -10.4595 -9.159540000000001e-19 );
+            min(x_by_h_10,U) ( -46.0463 -42.0793 -3.92497e-16 );
+            max(x_by_h_10,U) ( 82.3373 0 4.28514e-16 );
+            average(U)      ( 39.7064 -10.3582 -7.074199999999999e-20 );
+            min(U)          ( -46.0463 -44.4113 -3.92497e-16 );
+            max(U)          ( 82.3373 0 4.28514e-16 );
+        }
+        symmTensor
+        {
+            average(Uref,turbulenceProperties:devReff) ( -0.000926486 0.00205283 0 0.000944127 0 -1.76406e-05 );
+            min(Uref,turbulenceProperties:devReff) ( -0.000926486 0.00205283 0 0.000944127 0 -1.76406e-05 );
+            max(Uref,turbulenceProperties:devReff) ( -0.000926486 0.00205283 0 0.000944127 0 -1.76406e-05 );
+            average(x_by_h_m04,turbulenceProperties:devReff) ( -0.00238655 -0.211558 0 0.00247736 0 -9.08091e-05 );
+            min(x_by_h_m04,turbulenceProperties:devReff) ( -0.00716759 -1.07401 0 -0.00329383 0 -0.000446217 );
+            max(x_by_h_m04,turbulenceProperties:devReff) ( 0.00285907 0.00234561 0 0.00743 0 0.000434756 );
+            average(x_by_h_01,turbulenceProperties:devReff) ( -0.0148337 0.157571 2.18733e-21 0.0143126 8.29336e-21 0.000521132 );
+            min(x_by_h_01,turbulenceProperties:devReff) ( -0.336019 -0.642864 -6.07044e-19 -0.176266 -3.15788e-18 -0.00242262 );
+            max(x_by_h_01,turbulenceProperties:devReff) ( 0.175559 7.19193 5.13519e-19 0.335869 4.5206e-18 0.0167183 );
+            average(x_by_h_04,turbulenceProperties:devReff) ( -0.0195032 -0.21243 3.52884e-21 0.0199384 1.15176e-20 -0.00043519 );
+            min(x_by_h_04,turbulenceProperties:devReff) ( -0.0578282 -3.20816 -6.90042e-19 -0.0256474 -6.22019e-18 -0.00220128 );
+            max(x_by_h_04,turbulenceProperties:devReff) ( 0.0265233 0.09849529999999999 6.52434e-19 0.0598998 6.13757e-18 0.000876026 );
+            average(x_by_h_06,turbulenceProperties:devReff) ( -0.008610690000000001 -0.432776 -2.05065e-21 0.008763679999999999 -6.90239e-21 -0.000152993 );
+            min(x_by_h_06,turbulenceProperties:devReff) ( -0.0363339 -5.41869 -5.89482e-19 -0.0461046 -3.08273e-18 -0.000860136 );
+            max(x_by_h_06,turbulenceProperties:devReff) ( 0.0455039 0.0438813 6.51546e-19 0.0364647 3.56954e-18 0.000944794 );
+            average(x_by_h_10,turbulenceProperties:devReff) ( -0.0301124 -0.156826 -8.95613e-21 0.0303396 -4.30163e-20 -0.000227289 );
+            min(x_by_h_10,turbulenceProperties:devReff) ( -0.092144 -1.67405 -1.75834e-18 -0.0248454 -4.81883e-17 -0.00186462 );
+            max(x_by_h_10,turbulenceProperties:devReff) ( 0.024404 0.0871048 8.982870000000001e-19 0.0939098 5.57829e-17 0.00558206 );
+            average(turbulenceProperties:devReff) ( -0.0165516 -0.165924 -1.1635e-21 0.0166265 -6.64124e-21 -7.48356e-05 );
+            min(turbulenceProperties:devReff) ( -0.336019 -5.41869 -1.75834e-18 -0.176266 -4.81883e-17 -0.00242262 );
+            max(turbulenceProperties:devReff) ( 0.175559 7.19193 8.982870000000001e-19 0.335869 5.57829e-17 0.0167183 );
+        }
+    }
+}
+
+sample
+{
+    p
+    {
+        file            "<case>/postProcessing/sample/1000/x_by_h_10_p_U_turbulenceProperties:devReff.xy";
+    }
+    U
+    {
+        file            "<case>/postProcessing/sample/1000/x_by_h_10_p_U_turbulenceProperties:devReff.xy";
+    }
+    turbulenceProperties:devReff
+    {
+        file            "<case>/postProcessing/sample/1000/x_by_h_10_p_U_turbulenceProperties:devReff.xy";
+    }
+}
+
+
+// ************************************************************************* //
