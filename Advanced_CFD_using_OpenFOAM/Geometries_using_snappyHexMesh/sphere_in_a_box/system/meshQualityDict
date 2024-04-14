@@ -1,0 +1,26 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      meshQualityDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Include defaults parameters from master dictionary
+#includeEtc "caseDicts/mesh/generation/meshQualityDict.cfg"
+
+//- Relative position of face in relation to cell centres (0.5 for orthogonal
+//  mesh) (0 -> 0.5)
+minFaceWeight 0.02;
+
+
+
+// ************************************************************************* //
